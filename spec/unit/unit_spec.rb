@@ -5,8 +5,8 @@ RSpec.describe Book, type: :model do
 	subject do
 		described_class.new(title: 'Harry Potter')
 		described_class.new(author: 'JK Rowling')
-		described_class.new(price: 20)
-		described_class.new(published_date: '2021-07-01')
+		# described_class.new(price: 20)
+		# described_class.new(published_date: '2021-07-01')
 	end
 	
 	it 'is valid with valid attributes' do
@@ -23,13 +23,13 @@ RSpec.describe Book, type: :model do
 		expect(subject).not_to be valid
 	end
 
-	it 'is not valid without a price' do
-		subject.price = nil
-		expect(subject).not_to be_valid
-	end
+	# it 'is not valid without a price' do
+	# 	subject.price = nil
+	# 	expect(subject).not_to be_valid
+	# end
 
-	it 'is not valid without a published date' do
-		subject.published_date = nil
-		expect(subject).not_to be_valid
-	end
+	# it 'is not valid without a published date' do
+	# 	subject.published_date = nil
+	# 	expect(subject).not_to be_valid
+	# end
 end
