@@ -1,0 +1,7 @@
+<h1>Delete Book</h1>
+
+<p>Are you sure you want to delete this book?</p>
+
+<p><%= @book %></p>
+<%= link_to 'Delete', delete_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
