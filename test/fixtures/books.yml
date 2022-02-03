@@ -3,11 +3,11 @@
 one:
   title: MyString
   author: MyString
-  price: MyFloat
+  price: MyNumerical
   date: MyDate
 
 two:
   title: MyString
   author: MyString
-  price: MyFloat
+  price: MyNumerical
   date: MyDate
